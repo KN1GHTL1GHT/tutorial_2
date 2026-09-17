@@ -1,15 +1,18 @@
 /* Tutorial 2 CSS*/
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 body{
   margin:0;
 }
+
 .page-layout{
   display: grid;
   grid-template-rows: auto 1fr auto;
   background-color: darkseagreen;
   min-height: 100vh;
   min-height: 100dvh;
+  font-family: "Oswald", sans-serif ;
 }
 
 .container{
