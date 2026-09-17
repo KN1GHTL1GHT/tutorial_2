@@ -10,13 +10,13 @@ body{
   background-color: darkseagreen;
   min-height: 100vh;
   min-height: 100dvh;
-  align-content: center;
 }
 
 .container{
   display: flex;
   flex-direction: row;
   gap: 10px;
+  justify-content: center;
 }
 
 .component{
@@ -29,6 +29,7 @@ body{
   flex:1;
   max-width: 471px;
   min-width: 399px;
+  padding: 24px;
 }
 
 .component div.header{
@@ -37,6 +38,13 @@ body{
 
 .component div.actionbar{
   grid-area: actionbar;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.actionbar-text{
+  padding-left: 6px;
 }
 
 .component div.content{
