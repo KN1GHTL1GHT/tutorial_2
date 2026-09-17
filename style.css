@@ -10,7 +10,9 @@ body{
   background-color: darkseagreen;
   min-height: 100vh;
   min-height: 100dvh;
+  align-content: center;
 }
+
 .container{
   display: flex;
   flex-direction: row;
@@ -25,6 +27,20 @@ body{
   "content";
   background-color:rgb(230, 230, 238);
   flex:1;
+  max-width: 471px;
+  min-width: 399px;
+}
+
+.component div.header{
+  grid-area: header;
+}
+
+.component div.actionbar{
+  grid-area: actionbar;
+}
+
+.component div.content{
+  grid-area: content;
 }
 
 @media (max-width: 600px) {
