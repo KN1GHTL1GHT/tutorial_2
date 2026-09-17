@@ -17,6 +17,7 @@ body{
   flex-direction: row;
   gap: 10px;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .component{
@@ -29,8 +30,9 @@ body{
   flex:1;
   gap: 10px;
   max-width: 471px;
-  min-width: 399px;
+  min-width: 310px;
   padding: 24px;
+  border-radius: 15px ;
 }
 
 .component div.header {
@@ -78,13 +80,15 @@ body{
 .header-date {
    font-size: 14px;
    line-height: 16px;
+   color:#858484;
  }
 
   .author {
     display: flex;
     align-items: center;
     gap: 6px;
-    white-space: nowrap;    
+    white-space: nowrap;
+    color:#858484;    
   }
 
   .header-desc {
@@ -101,13 +105,42 @@ body{
 }
 .actionbar-text{
   padding-left: 6px;
+  color:#858484;
 }
 
 .component div.content{
   grid-area: content;
+  display: flex;
+  flex-direction: column;
 }
 
-@media (max-width: 600px) {
+.comment{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  border-top: 1px solid #ccc;
+}
+
+.comment-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.comment-time{
+  font-size: 13px;
+  white-space: nowrap;
+  color:#858484;
+}
+
+.comment-text{
+  margin: 0;
+  line-height: 18px;
+}
+
+@media (max-width: 1000px) {
   .container{
     flex-direction: column;
   }
