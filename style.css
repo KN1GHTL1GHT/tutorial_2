@@ -8,7 +8,8 @@ body{
   display: grid;
   grid-template-rows: auto 1fr auto;
   background-color: darkseagreen;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 .container{
   display: flex;
@@ -24,4 +25,11 @@ body{
   "content";
   background-color:rgb(230, 230, 238);
   flex:1;
+}
+
+@media (max-width: 600px) {
+  .container{
+    flex-direction: column;
+  }
+  
 }
